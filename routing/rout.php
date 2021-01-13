@@ -34,3 +34,5 @@ App::$collector->any('set-active-core', ['core\controllers\CoreController', 'act
 App::$collector->any('delete-core', ['core\controllers\CoreController', 'actionDeleteCore']);
 
 App::$collector->any('archive-core', ['core\controllers\CoreController', 'actionArchiveCore']);
+
+App::$collector->get('contacts', ['workspace\controllers\MainController', 'actionContacts']);

@@ -84,6 +84,11 @@ class MainController extends Controller
         }
     }
 
+    public function actionContacts()
+    {
+
+    }
+
     public function actionLogout()
     {
         session_destroy();
