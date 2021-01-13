@@ -46,14 +46,14 @@ App::$collector->group(['before' => 'auth'], function ($router){
     });
 });
 
-App::$collector->get('shop/{page:i}?', ['workspace\modules\Shop\controllers\ShopController', 'actionIndex']);
+App::$collector->get('shop/{page:i}?', ['workspace\modules\shop\controllers\ShopController', 'actionIndex']);
 
-App::$collector->get('product/{id}/', ['workspace\modules\Shop\controllers\ShopController', 'actionView']);
+App::$collector->get('product/{id}/', ['workspace\modules\shop\controllers\ShopController', 'actionView']);
 
-App::$collector->post('shop/add_to_cart', ['workspace\modules\Shop\controllers\ShopController', 'actionAddProductToCart']);
+App::$collector->post('shop/add_to_cart', ['workspace\modules\shop\controllers\ShopController', 'actionAddProductToCart']);
 
-App::$collector->post('shop/remove_from_cart', ['workspace\modules\Shop\controllers\ShopController', 'actionRemoveProductFromCart']);
+App::$collector->post('shop/remove_from_cart', ['workspace\modules\shop\controllers\ShopController', 'actionRemoveProductFromCart']);
 
-App::$collector->get('shop/cart', ['workspace\modules\Shop\controllers\ShopController', 'actionCart']);
+App::$collector->get('shop/cart', ['workspace\modules\shop\controllers\ShopController', 'actionCart']);
 
-App::$collector->any('shop/checkout', ['workspace\modules\Shop\controllers\ShopController', 'actionCheckout']);
+App::$collector->any('shop/checkout', ['workspace\modules\shop\controllers\ShopController', 'actionCheckout']);
