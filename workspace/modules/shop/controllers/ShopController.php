@@ -28,8 +28,8 @@ class ShopController extends Controller
             ->count();
         $products = Product::with('photos')
             ->where('category_id', $category_id)
-            ->skip(($page-1)*5)
-            ->take(5)
+            ->skip(($page-1)*15)
+            ->take(15)
             ->get();
         return $this->render('shop/index.tpl', [
             'products' => $products->toArray(),
