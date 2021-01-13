@@ -52,8 +52,9 @@ class ShopController extends Controller
 
     public function actionAddProductToCart()
     {
+        $_SESSION['cart'] = $_SESSION['cart'] ?? [];
         $selectedProducts = array_column($_SESSION['cart'],'product');
-        if (!empty($_SESSION['cart']) && in_array($_POST['product'], $selectedProducts)) {
+        if (in_array($_POST['product'], $selectedProducts)) {
             foreach ($_SESSION['cart'] as $key => $product) {
                 if ($product['product'] == (int)$_POST['product']) {
                     unset($_SESSION['cart'][$key]);
