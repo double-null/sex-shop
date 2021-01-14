@@ -4,6 +4,10 @@
     <span>{$product.name}</span>
 {/capture}
 
+{capture name="js_body"}
+    <script src="/resources/js/single_product.js"></script>
+{/capture}
+
 <section class="ftco-section bg-light">
     <div class="container">
         <div id="product-{$product.id}" class="row">

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Modist - Free Bootstrap 4 Template by Colorlib</title>
+    {$smarty.capture.meta}
+    <title>{$title}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,10 +23,14 @@
     <link rel="stylesheet" href="/resources/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="/resources/css/jquery.timepicker.css">
 
-
     <link rel="stylesheet" href="/resources/css/flaticon.css">
     <link rel="stylesheet" href="/resources/css/icomoon.css">
     <link rel="stylesheet" href="/resources/css/style.css">
+    {$meta}
+    {$css}
+    {$smarty.capture.css}
+    {$smarty.capture.js_head}
+    {$jsHead}
 </head>
 <body>
 
@@ -33,7 +38,7 @@
     <div class="container">
         <a class="navbar-brand" href="/">Shop Name</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
+            <span class="oi oi-menu"></span> Меню
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -115,23 +120,31 @@
     </div>
 </footer>
 
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+    </svg>
+</div>
 
-    <script src="/resources/js/jquery.min.js"></script>
-    <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="/resources/js/popper.min.js"></script>
-    <script src="/resources/js/bootstrap.min.js"></script>
-    <script src="/resources/js/jquery.easing.1.3.js"></script>
-    <script src="/resources/js/jquery.waypoints.min.js"></script>
-    <script src="/resources/js/jquery.stellar.min.js"></script>
-    <script src="/resources/js/owl.carousel.min.js"></script>
-    <script src="/resources/js/jquery.magnific-popup.min.js"></script>
-    <script src="/resources/js/aos.js"></script>
-    <script src="/resources/js/jquery.animateNumber.min.js"></script>
-    <script src="/resources/js/bootstrap-datepicker.js"></script>
-    <script src="/resources/js/scrollax.min.js"></script>
-    <script src="/resources/js/main.js"></script>
-    <script src="/workspace/modules/shop/resources/js/shop.js"></script>
+<script src="/resources/js/jquery.min.js"></script>
+<script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/resources/js/popper.min.js"></script>
+<script src="/resources/js/bootstrap.min.js"></script>
+<script src="/resources/js/jquery.easing.1.3.js"></script>
+<script src="/resources/js/jquery.waypoints.min.js"></script>
+<script src="/resources/js/jquery.stellar.min.js"></script>
+<script src="/resources/js/owl.carousel.min.js"></script>
+<script src="/resources/js/jquery.magnific-popup.min.js"></script>
+<script src="/resources/js/aos.js"></script>
+<script src="/resources/js/jquery.animateNumber.min.js"></script>
+<script src="/resources/js/bootstrap-datepicker.js"></script>
+<script src="/resources/js/scrollax.min.js"></script>
+<script src="/resources/js/main.js"></script>
+<script src="/workspace/modules/shop/resources/js/shop.js"></script>
+
+{$smarty.capture.js_body}
+{$jsEndBody}
 </body>
 </html>
