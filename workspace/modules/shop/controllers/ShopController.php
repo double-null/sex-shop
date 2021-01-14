@@ -26,7 +26,7 @@ class ShopController extends Controller
         $category = Category::find($category_id)->first();
         $totalProducts = Product::all()->where('category_id', $category_id)
             ->count();
-        $page = (int)$_GET['page'] ?? 0;
+        $page = (int)($_GET['page'] ?? 0);
         $products = Product::with('photos')
             ->where('category_id', $category_id)
             ->skip(($page-1)*15)
