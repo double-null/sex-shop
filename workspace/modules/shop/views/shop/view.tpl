@@ -12,6 +12,7 @@
     <div class="container">
         <div id="product-{$product.id}" class="row">
             <div class="col-lg-6 mb-5 ftco-animate fadeInUp ftco-animated">
+                <div>
                 {foreach $product.photos as $photo}
                     {if $photo.cover == 1}
                         <a href="/images/{$photo.name}" class="image-popup">
@@ -19,7 +20,20 @@
                         </a>
                     {/if}
                 {/foreach}
+                </div>
+                <div class="product-slider owl-carousel ftco-animate mt-5">
+                    {foreach $product.photos as $photo}
+                        <div class="item">
+                            <div class="product">
+                                <a href="/images/{$photo.name}" class="image-popup">
+                                    <img class="img-fluid" src="/images/{$photo.name}">
+                                </a>
+                            </div>
+                        </div>
+                    {/foreach}
+                </div>
             </div>
+
             <div class="col-lg-6 product-details pl-md-5 ftco-animate fadeInUp ftco-animated">
                 <h3>{$product.name}</h3>
                 <p class="price"><span>{$product.price}$</span></p>
