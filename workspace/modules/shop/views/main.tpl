@@ -8,24 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/animate.css">
+    <link rel="stylesheet" href="/resources/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/animate.css">
 
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/magnific-popup.css">
+    <link rel="stylesheet" href="/resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/resources/css/magnific-popup.css">
 
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/aos.css">
+    <link rel="stylesheet" href="/resources/css/aos.css">
 
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/ionicons.min.css">
+    <link rel="stylesheet" href="/resources/css/ionicons.min.css">
 
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/resources/css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/flaticon.css">
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/icomoon.css">
-    <link rel="stylesheet" href="/workspace/modules/shop/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/flaticon.css">
+    <link rel="stylesheet" href="/resources/css/icomoon.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
 </head>
 <body>
 
@@ -94,7 +94,6 @@
                             <div class="col-md-4">
                                 <a href="/shop/?category={$category.id}">{$category.name}</a>
                             </div>
-
                         {/foreach}
                     </div>
                 </div>
@@ -119,20 +118,20 @@
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-    <script src="/workspace/modules/shop/resources/js/jquery.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/popper.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/bootstrap.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/jquery.easing.1.3.js"></script>
-    <script src="/workspace/modules/shop/resources/js/jquery.waypoints.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/jquery.stellar.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/owl.carousel.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/jquery.magnific-popup.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/aos.js"></script>
-    <script src="/workspace/modules/shop/resources/js/jquery.animateNumber.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/bootstrap-datepicker.js"></script>
-    <script src="/workspace/modules/shop/resources/js/scrollax.min.js"></script>
-    <script src="/workspace/modules/shop/resources/js/main.js"></script>
+    <script src="/resources/js/jquery.min.js"></script>
+    <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/jquery.easing.1.3.js"></script>
+    <script src="/resources/js/jquery.waypoints.min.js"></script>
+    <script src="/resources/js/jquery.stellar.min.js"></script>
+    <script src="/resources/js/owl.carousel.min.js"></script>
+    <script src="/resources/js/jquery.magnific-popup.min.js"></script>
+    <script src="/resources/js/aos.js"></script>
+    <script src="/resources/js/jquery.animateNumber.min.js"></script>
+    <script src="/resources/js/bootstrap-datepicker.js"></script>
+    <script src="/resources/js/scrollax.min.js"></script>
+    <script src="/resources/js/main.js"></script>
     <script src="/workspace/modules/shop/resources/js/shop.js"></script>
 </body>
 </html>
