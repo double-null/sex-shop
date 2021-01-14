@@ -86,7 +86,7 @@ class MainController extends Controller
 
     public function actionContacts()
     {
-
+        return $this->render('main/contacts.tpl');
     }
 
     public function actionLogout()
