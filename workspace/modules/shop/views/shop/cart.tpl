@@ -3,6 +3,10 @@
     <span>Корзина</span>
 {/capture}
 
+{capture name="js_body"}
+    <script src="/resources/js/single_product.js"></script>
+{/capture}
+
 <section class="ftco-section ftco-cart">
     <div class="container">
         <div class="row">
@@ -45,8 +49,18 @@
                                 {if $selectedProduct.product == $product.id}
                                     <td class="quantity">
                                         <div class="input-group mb-3">
-                                            <input type="text" name="quantity" class="quantity form-control input-number"
+                                            <span class="input-group-btn mr-2">
+                                                <button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
+                                                    <i class="ion-ios-remove"></i>
+                                                </button>
+                                            </span>
+                                            <input id="quantity" type="text" name="quantity" class="quantity form-control input-number"
                                                    value="{$selectedProduct.quantity}" min="1" max="100">
+                                            <span class="input-group-btn ml-2">
+                                                <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+                                                     <i class="ion-ios-add"></i>
+                                                 </button>
+                                            </span>
                                         </div>
                                     </td>
 
