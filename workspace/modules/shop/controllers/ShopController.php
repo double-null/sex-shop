@@ -37,6 +37,7 @@ class ShopController extends Controller
             'category' => $category->toArray(),
             'totalProducts' => $totalProducts,
             'page' => $page,
+            'categoryId' => $category_id,
         ]);
     }
 

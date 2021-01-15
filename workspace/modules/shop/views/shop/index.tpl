@@ -44,7 +44,10 @@
 
         <div class="row mt-5">
             <div class="col text-center">
-                {workspace\modules\shop\widgets\Pagination::widget()->setParams($page, $totalProducts, '/shop/?page=')->run()}
+                {workspace\modules\shop\widgets\Pagination::widget()
+                    ->setParams($page, $totalProducts, "/shop/?category=$categoryId&page=")
+                    ->run()
+                }
             </div>
         </div>
     </div>
