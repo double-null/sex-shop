@@ -95,6 +95,16 @@ class ShopController extends Controller
         $_SESSION['cart'] = $_SESSION['cart'] ?? [];
         $selectedProducts = array_column($_SESSION['cart'],'product');
         $products = Product::find($selectedProducts);
+        if (!empty($_POST['products'])) {
+            unset($_SESSION['cart']);
+            foreach ($_POST['products'] as $product => $quantity) {
+                $_SESSION['cart'][] = [
+                    'product' => $product,
+                    'quantity' => $quantity,
+                ];
+            }
+            $this->redirect('/shop/checkout/');
+        }
         return $this->render('shop/cart.tpl', [
             'products' => $products,
         ]);

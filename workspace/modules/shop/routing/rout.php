@@ -54,6 +54,6 @@ App::$collector->post('shop/add_to_cart', ['workspace\modules\shop\controllers\S
 
 App::$collector->post('shop/remove_from_cart', ['workspace\modules\shop\controllers\ShopController', 'actionRemoveProductFromCart']);
 
-App::$collector->get('shop/cart', ['workspace\modules\shop\controllers\ShopController', 'actionCart']);
+App::$collector->any('shop/cart', ['workspace\modules\shop\controllers\ShopController', 'actionCart']);
 
 App::$collector->any('shop/checkout', ['workspace\modules\shop\controllers\ShopController', 'actionCheckout']);

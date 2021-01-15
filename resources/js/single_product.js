@@ -1,32 +1,17 @@
 $(document).ready(function(){
     var quantity=0;
+
     $('.quantity-right-plus').click(function(e){
-
-        // Stop acting like a button
         e.preventDefault();
-        // Get the field name
-        var quantity = parseInt($('#quantity').val());
-
-        // If is not undefined
-
-        $('#quantity').val(quantity + 1);
-
-
-        // Increment
-
+        var quantity = parseInt($($(this).data('field')).val());
+        $($(this).data('field')).val(quantity + 1);
     });
 
     $('.quantity-left-minus').click(function(e){
-        // Stop acting like a button
         e.preventDefault();
-        // Get the field name
-        var quantity = parseInt($('#quantity').val());
-
-        // If is not undefined
-
-        // Increment
+        var quantity = parseInt($($(this).data('field')).val());
         if(quantity>0){
-            $('#quantity').val(quantity - 1);
+            $($(this).data('field')).val(quantity - 1);
         }
     });
 

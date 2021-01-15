@@ -24,3 +24,7 @@ $('.remove-from-cart').click(function(e){
     }, 'json');
     $(this).closest('.product-item').remove();
 });
+
+$('.reduce-quantity').click(function (e) {
+    alert(1);
+});
